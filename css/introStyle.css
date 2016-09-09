@@ -1,13 +1,22 @@
-body {
-    margin: 0;
+.overlayColor {
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
     
-    color: snow;
+    animation-name: fadeInBlack;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.background-image {
+    margin: 0;
     background-color: black;
     
-    background-image:url("../imgs/vBack.jpg");
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+    filter: blur(2px);
     
     background-position: 50% 0%;    
     
@@ -16,9 +25,22 @@ body {
     bottom:0px;
     left:0px;
     right:0px;
+    z-index: -1;
     
     height: 100%;
-    width: 100%;   
+    width: 100%;    
+}
+
+.img-main {
+    background-image: url("../imgs/vm1.gif");
+}
+
+.img-about {
+    background-image: url("../imgs/v2.jpg");
+}
+
+.img-contact {
+    background-image: url("../imgs/v5.jpg");
 }
 
 .introHeader {
@@ -31,13 +53,14 @@ body {
     font-size: 3em;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
+/* ### ANIMATION ### */
 
-#mainContainer {
+@keyframes fadeInBlack{
+    from {
+        background-color: rgba(0,0,0,1);
+    }
     
-    
+    to {
+        background-color: rgba(0,0,0,0);
+    }
 }

@@ -1,3 +1,15 @@
-body {
+* {
+    font-family: 'Baloo Chettan', cursive;
+    color: snow;
+}
 
+body {
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1em;
 }
