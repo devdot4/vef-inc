@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    
+    color: snow;
+    background-color: black;
+    
+    background-image:url("../imgs/vBack.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    
+    background-position: 50% 0%;    
+    
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    
+    height: 100%;
+    width: 100%;   
+}
+
+header {
+    position: fixed;
+    top: 50%;
+    
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.1);
+    font-size: 3em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#mainContainer {
+    
+    
+}
