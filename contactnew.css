@@ -1,0 +1,64 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+	font-family: 'Baloo Tamma', cursive;
+	font-weight:300;
+	font-size:35px;
+	line-height:30px;
+	background-image:url("https://raw.githubusercontent.com/Smoreley/collab-w1-d4/master/imgs/volcano02-lava-flow-ocean-hawaii_22329_600x450.jpg");	 background-repeat:no-repeat;
+  	background-size: cover;
+  	text-align: center;
+}
+
+p {
+	font-size:15px;
+	line-height:13px;
+	font-color:white;
+	text-align: center;
+}
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
+}
+ 
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+ 
+
