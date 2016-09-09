@@ -103,7 +103,7 @@ display: inline;
   margin-right: -4px;
 }
 } 
-
+/** Fieldset borders **/
 .fieldset {
 	border: none;
 }
