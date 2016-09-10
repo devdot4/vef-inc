@@ -13,3 +13,10 @@ footer {
     right: 0;
     padding: 1em;
 }
+
+.copyright {
+    position: fixed;
+    color: white;
+    left: 10px;
+    bottom: 0;
+}

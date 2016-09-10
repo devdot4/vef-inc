@@ -1,25 +1,12 @@
-/** Main Area **/
-* {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
-}
-
+/** Container **/
 #contactContainer {
-	font-family: 'Baloo Tamma', cursive;
-	font-weight:300px;
-	font-size:35px;
-    box-shadow: 10px 10px 5px #888888
-	line-height:30px;
   	text-align: center;
-  	margin: 0;
+    background-color: rgba(0,0,0,.8);
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 1em;
 }
 
 p class="contact" {
@@ -29,19 +16,17 @@ p class="contact" {
 	text-align: center;
 }
 
-div {
-	text-align: center;
-}
-
-#share-buttons img {
-width: 35px;
-padding: 5px;
-border: 0;
-box-shadow: 0;
-display: inline;
-}
-
 /** Fieldset borders **/
 .fieldset {
 	border: none;
+}
+
+.socialButtons {
+    padding: .5em;
+    
+}
+
+.socialButtons a {
+    margin:  4%;
+    color: transparent;
 }
