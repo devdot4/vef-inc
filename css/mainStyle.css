@@ -1,3 +1,4 @@
+/** Main Area **/
 * {
     font-family: 'Baloo Chettan', cursive;
     color: snow;
@@ -12,6 +13,7 @@ footer {
     bottom: 0;
     right: 0;
     padding: 1em;
+    font-size: 3vmin;
 }
 
 .copyright {
