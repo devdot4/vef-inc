@@ -8,7 +8,6 @@
 }
 .nav li {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-family: 'Baloo Tamma', cursive;
     border-bottom: 1px solid #888;
     margin-right: 10px;
     margin-left: 10px;
@@ -24,7 +23,12 @@
     border-radius: .5em;
 }
 .nav a:hover {
-  background-color: rgb(255, 131, 44);
+    background-color: rgb(255, 131, 44);
+    
+    animation-name: wiggle;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
 }
 .nav a.active {
   background-color: #fff;
@@ -64,4 +68,12 @@
         display: inline-block;
         margin-right: -4px;
     }
+}
+
+@keyframes wiggle {
+    0% { transform: rotateZ(4deg); }
+/*    25% { transform: rotateZ(-4deg); }*/
+    50% { transform: rotateZ(-4deg); }
+/*    75% { transform: rotateZ(4deg); }*/
+    100% { transform: rotateZ(4deg); }
 }

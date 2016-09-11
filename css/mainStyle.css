@@ -1,11 +1,19 @@
 /** Main Area **/
 * {
-    font-family: 'Baloo Chettan', cursive;
+    font-family: 'customFont';
+/*    font-family: 'Source Code Pro', monospace;*/
+
     color: snow;
+}
+
+@font-face {
+    font-family: 'customFont'; /*a name to be used later*/
+    src: url(../fonts/FreckleFace-Regular.ttf);/*URL to font*/
 }
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -13,12 +21,16 @@ footer {
     bottom: 0;
     right: 0;
     padding: 1em;
-    font-size: 3vmin;
+    font-size: 2.6vmin;
+    margin: 0;
+    background-color: rgba(0,0,0,.8);
+    text-align: right;
+    width: 100%;
 }
 
 .copyright {
     position: fixed;
-    color: white;
-    left: 10px;
+    left: 0;
     bottom: 0;
+    padding: 1em;
 }

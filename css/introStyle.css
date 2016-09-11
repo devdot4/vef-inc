@@ -18,9 +18,7 @@
     
 	background-attachment: fixed;
     background-repeat:no-repeat;
-    background-size: cover;
-    filter: blur(2px);
-    
+    background-size: cover;    
     background-position: 50% 0%;    
     
     position:fixed;
@@ -31,7 +29,7 @@
     z-index: -1;
     
     height: 100%;
-    width: 100%;    
+    width: 100%;
 }
 
 /** Background Images **/
@@ -44,7 +42,7 @@
 }
 
 .img-contact {
-    background-image: url("../imgs/v5.jpg");
+    background-image: url("../imgs/v9.jpg");
 }
 
 /** Header **/
@@ -52,9 +50,15 @@
     color: rgba(255, 131, 44, 0.8);
     text-align: center;
     position: fixed;
-    font-size: 8vmin;
+    font-size: 6vmin;
     width: 100%;
-    top: 80%;
+    bottom: 8.4vmin;
+    
+    background-color: rgba(0,0,0,.8);
+    z-index: 2;    
+    animation-name: titleChangePos;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;    
 }
 
 /** Video Background **/
@@ -71,4 +75,34 @@
 .fullscreen-bg__video {
     position: absolute;
     top: 0;
+}
+
+@keyframes titleChangePos {
+    0% {
+        bottom: 50%;
+        font-size: 11vmin;
+        background-color: rgba(0,0,0,0);
+    }
+    
+    25% {
+        bottom: 50%;
+        font-size: 8vmin;
+        background-color: rgba(0,0,0,0);
+    }
+    
+    65% {
+        bottom: 50%;
+        font-size: 8vmin;
+        background-color: rgba(0,0,0,0);
+    }
+    
+    90% {
+        background-color: rgba(0,0,0,0);
+    }
+    
+    100% {
+        bottom: 8.4vmin;
+        font-size: 6vmin;
+        background-color: rgba(0,0,0,.8);
+    }
 }
